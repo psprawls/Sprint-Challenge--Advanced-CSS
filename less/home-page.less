@@ -1,5 +1,7 @@
 // Home Content
 
+@phone: ~"(max-width: 500px)";
+
 .home {
 
   .intro {
@@ -11,6 +13,10 @@
     p {
       padding:0 15px;
     }
+
+    img{
+        border-radius: 7px;
+    }
   
   }
 
@@ -20,11 +26,9 @@
     width: 100%;
 
     img {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
+      img-style();
     }
+
   }
 
   .visit-planets {
@@ -57,7 +61,8 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      button {
+        button-style(#23293B, white);
       }
     }
 
