@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
 html,
 body,
 div,
@@ -212,6 +213,62 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+
+@media (max-width:500px) {
+    .home .space-images img.blast {
+        width: 100%;
+    }
+    .home .space-images img.launch {
+        display: none;
+    }
+    .home .space-images img.sky {
+        display: none;
+    }
+    .home .space-images img.launch {
+        display: none;
+    }
+
+    .walk .walk-img-desktop {
+        display: none;
+    }
+
+    .walk .walk-img-mobile {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    .walk .walk-img-mobile img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .walk {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .home .walk .walk-text {
+        width: 100%;
+        padding-top: 10px;
+    }
+}
+
+@media (min-width:500px) {
+    
+    .walk .walk-img-mobile {
+       display: none;
+    }
+
+    .home .walk .walk-text {
+        width: 50%;
+    }
+    
+}
+
 .home .visit-planets {
   padding: 15px;
 }
@@ -228,20 +285,18 @@ footer {
   display: flex;
   justify-content: center;
 }
-.home .walk .walk-text {
-  width: 50%;
-}
+
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-img {
+.home .walk .walk-img-desktop {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+.home .walk .walk-img-desktop img {
   width: 100%;
   height: auto;
   border-radius: 10px;
